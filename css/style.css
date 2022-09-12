@@ -298,6 +298,10 @@ div.square-big-central p {
     padding: 30px;
 }
 
+div.square-big-central img {
+    width: 60%;
+}
+
 /* immagini loghi in quadrati piccoli */
 .square-small {
     width: 50%;
@@ -312,8 +316,6 @@ div.square-small img {
     left: 50%;
     transform: translate(-50%, -50%);
 }
-
-
 
 /* colorazione quadrati */
 .square-small-1 {
@@ -377,6 +379,24 @@ div.square-small img {
     text-align: center;
 }
 
+/* settima sezione */
+.section-seven li {
+    border-bottom: 1px solid var(--black);
+    padding: 20px;
+}
+
+li.view-hidden h4 {
+    padding: 20px;
+
+}
+
+.hidden {
+    display: none;
+}
+
+li.view-hidden:hover .hidden {
+    display: block;
+}
 
 
 /* footer */
