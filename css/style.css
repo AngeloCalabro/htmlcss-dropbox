@@ -9,10 +9,10 @@
     --square1: #A2D39B;
     --border-square1: #D1E9CD;
     --square2: #61082B;
-    --square3: #D5001F;
-    --square4: #B4D0E7;
-    --square5: #0093CE;
-    --square6: #FF1C1C;
+    --square5: #D5001F;
+    --square6: #B4D0E7;
+    --square3: #0093CE;
+    --square4: #FF1C1C;
     --square7: #0D2481;
     --square8: #FFD830;
     --square-big: #F5F5F5;
@@ -108,6 +108,10 @@ ul a {
     color: var(--black);
 }
 
+div.section-header-right a {
+    text-decoration: none;
+}
+
 .nav-flex {
     justify-content: space-between;
     align-items: center;
@@ -154,7 +158,7 @@ header {
 /* main */
 
 section {
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 /* prima sezione */
@@ -260,13 +264,16 @@ div.article img {
 }
 
 /* quinta sezione */
-.section-five {
+section.section-five {
     width: 100%;
+    margin: 0;
 }
 
 .square-big {
     width: calc(100% / 3);
     flex-wrap: wrap;
+    background-color: var(--square-big);
+    position: relative;
 }
 
 .square-big:after {
@@ -275,6 +282,23 @@ div.article img {
     padding-bottom: 100%;
 }
 
+/* quadrato centrale */
+.square-big-central {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow-y: auto;
+}
+
+div.square-big-central img,
+div.square-big-central p {
+    padding: 30px;
+}
+
+/* immagini loghi in quadrati piccoli */
 .square-small {
     width: 50%;
     height: 50%;
@@ -289,18 +313,15 @@ div.square-small img {
     transform: translate(-50%, -50%);
 }
 
-.square-big-central {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
 
-.square-big-central img {
-    width: 30%;
-}
 
+/* colorazione quadrati */
 .square-small-1 {
     background-color: var(--square1);
+    background-image: url(../img/designit.svg);
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: center;
 }
 
 .square-small-2 {
