@@ -20,7 +20,7 @@
     --font-xs: 14px;
     --font-s: 18px;
     --font-m: 25px;
-    --font-l: 50px;
+    --font-l: 46px;
     --font-xl: 80px;
 }
 
@@ -235,6 +235,20 @@ div.partner-text span {
     border-right: 1px solid var(--grey);
     border-left: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
+}
+
+/* terza sezione */
+.section-article {
+    flex-wrap: wrap;
+}
+
+div.article {
+    width: calc((100% - 60px) / 3);
+    margin: 30px 10px;
+}
+
+div.article img {
+    width: 100%;
 }
 
 /* footer */
