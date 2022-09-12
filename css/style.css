@@ -74,10 +74,9 @@ h5 {
     display: flex;
 }
 
-/* a {
+a {
     text-decoration: none;
-    color: var(--black);
-} */
+}
 
 li {
     list-style: none;
@@ -103,7 +102,7 @@ header nav {
     justify-content: space-between;
 }
 
-ul a {
+a {
     text-decoration: none;
     color: var(--black);
 }
@@ -263,6 +262,12 @@ div.article img {
     padding: 50px 0;
 }
 
+/* quarta sezione */
+section.section-four a {
+    text-decoration: underline;
+    color: var(--link);
+}
+
 /* quinta sezione */
 section.section-five {
     width: 100%;
@@ -403,11 +408,14 @@ li.view-hidden:hover .hidden {
 footer {
     background-color: var(--black);
     min-height: 280px;
-    padding: 20px
+    padding: 30px
+}
+
+footer nav {
+    padding-bottom: 20px;
 }
 
 footer nav li a {
-    /* text-decoration: none; */
     color: var(--white);
 }
 
@@ -418,4 +426,18 @@ footer nav li h4 {
 
 footer nav li {
     padding: 10px;
+}
+
+footer div {
+    padding: 20px;
+    border-top: 1px solid var(--white);
+    color: var(--white);
+}
+
+#lang-select {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--black);
+    min-width: 60px;
+    border-color: transparent;
 }
