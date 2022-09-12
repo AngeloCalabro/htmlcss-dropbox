@@ -89,6 +89,11 @@ li {
     padding: 10px;
 }
 
+#btn:hover {
+    background-color: var(--grey);
+    color: var(--botton);
+}
+
 
 /* header */
 header nav {
@@ -105,6 +110,11 @@ header nav {
 a {
     text-decoration: none;
     color: var(--black);
+}
+
+header nav li:hover {
+    border: 1px solid var(--grey);
+
 }
 
 div.section-header-right a {
@@ -242,6 +252,12 @@ div.partner-text span {
     border-right: 1px solid var(--grey);
     border-left: 1px solid var(--black);
     border-bottom: 1px solid var(--black);
+}
+
+.btn-partner:active {
+    background-color: var(--grey);
+    border: 1px solid var(--black);
+    font-size: 15px;
 }
 
 /* terza sezione */
