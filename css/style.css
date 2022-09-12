@@ -299,6 +299,37 @@ div.square-small img {
     width: 30%;
 }
 
+.square-small-1 {
+    background-color: var(--square1);
+}
+
+.square-small-2 {
+    background-color: var(--square2);
+}
+
+.square-small-3 {
+    background-color: var(--square3);
+}
+
+.square-small-4 {
+    background-color: var(--square4);
+}
+
+.square-small-5 {
+    background-color: var(--square5);
+}
+
+.square-small-6 {
+    background-color: var(--square6);
+}
+
+.square-small-7 {
+    background-color: var(--square7);
+}
+
+.square-small-8 {
+    background-color: var(--square8);
+}
 
 /* sesta sezione */
 .section-six {
