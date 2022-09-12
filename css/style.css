@@ -403,4 +403,19 @@ li.view-hidden:hover .hidden {
 footer {
     background-color: var(--black);
     min-height: 280px;
+    padding: 20px
+}
+
+footer nav li a {
+    /* text-decoration: none; */
+    color: var(--white);
+}
+
+footer nav li h4 {
+    padding-bottom: 15px;
+    color: var(--white);
+}
+
+footer nav li {
+    padding: 10px;
 }
