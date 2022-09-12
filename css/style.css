@@ -4,6 +4,8 @@
     --black: #000000;
     --sfondo: #B4D0E7;
     --botton: #0061FF;
+    --grey: #EDEDEE;
+    --link: #5A60F2;
     --square1: #A2D39B;
     --border-square1: #D1E9CD;
     --square2: #61082B;
@@ -15,7 +17,7 @@
     --square8: #FFD830;
     --square-big: #F5F5F5;
     --title-small: #61082B;
-    --font-xs: 12px;
+    --font-xs: 14px;
     --font-s: 18px;
     --font-m: 25px;
     --font-l: 50px;
@@ -85,7 +87,7 @@ header nav {
 header {
     background-color: var(--sfondo);
     padding-top: 80px;
-    margin-bottom: 80px;
+    margin-bottom: 200px;
 }
 
 #hero {
@@ -115,4 +117,66 @@ header {
     font-size: var(--font-l);
     margin: 40px 0;
     color: var(--black);
+}
+
+/* main */
+section {
+    margin-bottom: 150px;
+}
+
+h2 {
+    font-size: var(--font-l);
+    margin-bottom: 50px;
+}
+
+h3 {
+    font-size: var(--font-m);
+}
+
+h4 {
+    font-size: var(--font-s);
+}
+
+h5 {
+    font-size: var(--font-xs);
+}
+
+.margin-top-cards {
+    /* rimuovere */
+    margin-top: 50px;
+}
+
+.card {
+    border: 1px solid var(--grey);
+    text-align: center;
+    width: calc(100% / 3);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--grey);
+}
+
+div#radio-find label {
+    padding: 30px;
+}
+
+#buy-now {
+    text-decoration: underline;
+    color: var(--link);
+}
+
+#line-short hr {
+    padding: 20px;
+}
+
+.check {
+    color: var(--botton);
+}
+
+
+
+/* footer */
+footer {
+    background-color: var(--black);
+    min-height: 280px;
 }
