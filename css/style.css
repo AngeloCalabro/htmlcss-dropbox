@@ -1,6 +1,83 @@
 /* Command */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --sfondo: #B4D0E7;
+    --bottoni: #0061FF;
+    --square1: #A2D39B;
+    --border-square1: #D1E9CD;
+    --square2: #61082B;
+    --square3: #D5001F;
+    --square4: #B4D0E7;
+    --square5: #0093CE;
+    --square6: #FF1C1C;
+    --square7: #0D2481;
+    --square8: #FFD830;
+    --square-big: #F5F5F5;
+    --title-small: #61082B;
+    --font-xs: 12px;
+    --font-s: 18px;
+    --font-m: 25px;
+    --font-l: 50px;
+    --font-xl: 80px;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body {
+    background-color: ;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--white);
+}
+
+.max-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.min-container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.d-flex {
+    display: flex;
+}
+
+/* header */
+header nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
+    height: 80px;
+    background-color: var(--white);
+}
+
+header {
+    background-color: var(--sfondo);
+    padding-top: 80px;
+}
+
+#hero {
+    position: relative;
+    bottom: -100px;
+}
+
+#hero h1 {
+    font-size: var(--font-xl);
+    padding-bottom: 50px;
+}
+
+.section-header-right {
+    width: 35%;
+}
+
+#hero img {
+    width: 65%;
 }
