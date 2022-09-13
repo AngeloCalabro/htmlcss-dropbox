@@ -267,8 +267,15 @@ footer nav li {
 }
 
 div.lang:hover .absolute,
-div.lang:hover #overlay::selection {
+div.lang:hover #overlay {
     display: block;
+}
+
+#close-lang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
 }
 
 #overlay {
@@ -293,4 +300,8 @@ div.absolute h3 {
 .link-lang {
     color: var(--link);
     cursor: pointer;
+}
+
+.link-lang:hover {
+    text-decoration: underline;
 }

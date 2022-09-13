@@ -540,6 +540,53 @@ footer div {
     border-color: transparent;
 }
 
-.line-lang {
-    border-top: 1px solid var(--grey);
+div.flex-heart {
+    display: flex;
+    align-items: center;
 }
+
+/* .relative {
+    position: relative;
+}
+
+.absolute {
+    display: none;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 50px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+}
+
+div.lang:hover .absolute,
+div.lang:hover #overlay::selection {
+    display: block;
+}
+
+#overlay {
+    display: none;
+    background-color: rgba(99, 114, 130, 0.5);
+    z-index: 9999;
+    position: fixed;
+    inset: 0;
+}
+
+.box-lang {
+    display: flex;
+    flex-flow: column wrap;
+    height: 200px;
+    width: 400px;
+}
+
+div.absolute h3 {
+    padding-bottom: 20px;
+}
+
+.link-lang {
+    color: var(--link);
+    cursor: pointer;
+} */
