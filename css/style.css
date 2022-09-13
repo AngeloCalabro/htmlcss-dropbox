@@ -25,7 +25,7 @@
 }
 
 * {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -36,7 +36,6 @@
 }
 
 body {
-    background-color: ;
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--white);
 }
@@ -64,34 +63,96 @@ h5 {
 
 .max-container {
     max-width: 1200px;
+    margin: auto;
+    margin-bottom: 100px;
+
 }
 
 .min-container {
     max-width: 1000px;
+    margin: auto;
+    margin-bottom: 100px;
+
 }
 
 .d-flex {
     display: flex;
 }
 
-a {
-    text-decoration: none;
-}
-
 li {
     list-style: none;
 }
 
-#btn {
-    display: inline-block;
+a {
+    text-decoration: none;
+}
+
+/* bottoni */
+.btn {
+    display: block;
     background-color: var(--botton);
     color: var(--white);
     padding: 10px;
+    text-align: center;
+    transition: 0.5s;
 }
 
-#btn:hover {
+header a.btn-small {
+    display: block;
+    background-color: var(--botton);
+    color: var(--white);
+    padding: 10px;
+    text-align: center;
+    transition: 0.2s;
+    border: none;
+}
+
+.btn:hover,
+.btn-small:hover {
     background-color: var(--grey);
     color: var(--botton);
+}
+
+header li:hover {
+    background-color: var(--grey);
+}
+
+header li:active {
+    scale: 0.9;
+}
+
+.btn-width {
+    text-align: center;
+    width: 80%;
+}
+
+.btn-white {
+    display: block;
+    padding: 10px;
+    border-top: 1px solid var(--grey);
+    border-right: 1px solid var(--grey);
+    border-left: 1px solid var(--black);
+    border-bottom: 1px solid var(--black);
+    color: var(--black);
+    width: max-content;
+}
+
+.btn-white:hover {
+    background-color: var(--grey);
+    border: 1px solid var(--black);
+    transition: 0.5s;
+    scale: 0.9;
+}
+
+.btn-free {
+    display: block;
+    text-decoration: none;
+    background-color: var(--white);
+    color: var(--black);
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    border: none;
 }
 
 
@@ -107,18 +168,17 @@ header nav {
     justify-content: space-between;
 }
 
-a {
-    text-decoration: none;
+header a {
     color: var(--black);
-}
-
-header nav li:hover {
-    border: 1px solid var(--grey);
-
 }
 
 div.section-header-right a {
     text-decoration: none;
+    width: max-content;
+}
+
+.li-padding-left {
+    padding-left: 5px;
 }
 
 .nav-flex {
@@ -127,7 +187,7 @@ div.section-header-right a {
 }
 
 nav li {
-    padding: 0 20px;
+    padding: 20px;
 }
 
 header {
@@ -202,11 +262,6 @@ main li {
     padding-bottom: 30px;
 }
 
-.btn-width {
-    text-align: center;
-    width: 80%;
-}
-
 #buy-now {
     text-decoration: underline;
     color: var(--link);
@@ -243,21 +298,6 @@ div.partner-text h3,
 div.partner-text p,
 div.partner-text span {
     margin-bottom: 30px;
-}
-
-.btn-partner {
-    display: inline-block;
-    padding: 10px;
-    border-top: 1px solid var(--grey);
-    border-right: 1px solid var(--grey);
-    border-left: 1px solid var(--black);
-    border-bottom: 1px solid var(--black);
-}
-
-.btn-partner:active {
-    background-color: var(--grey);
-    border: 1px solid var(--black);
-    font-size: 15px;
 }
 
 /* terza sezione */
@@ -390,16 +430,6 @@ div.square-small img {
     width: 70%;
 }
 
-.btn-free {
-    display: block;
-    text-decoration: none;
-    background-color: var(--white);
-    color: var(--black);
-    width: 20%;
-    padding: 10px;
-    text-align: center;
-}
-
 /* settima sezione */
 .section-seven li {
     border-bottom: 1px solid var(--black);
@@ -446,8 +476,8 @@ footer nav li {
 
 footer div {
     padding: 20px;
-    border-top: 1px solid var(--white);
     color: var(--white);
+    width: max-content;
 }
 
 #lang-select {
@@ -456,4 +486,8 @@ footer div {
     background-color: var(--black);
     min-width: 60px;
     border-color: transparent;
+}
+
+.line-lang {
+    border-top: 1px solid var(--grey);
 }
