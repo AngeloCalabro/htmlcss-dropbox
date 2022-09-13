@@ -506,7 +506,15 @@ li.view-hidden:hover .hidden {
 footer {
     background-color: var(--black);
     min-height: 280px;
-    padding: 30px
+    padding: 30px;
+    color: var(--white);
+}
+
+nav.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 1px solid var(--white);
 }
 
 footer nav {
@@ -517,35 +525,27 @@ footer nav li a {
     color: var(--white);
 }
 
-footer nav li h4 {
-    padding-bottom: 15px;
-    color: var(--white);
-}
-
 footer nav li {
     padding: 10px;
 }
 
-footer div {
-    padding: 20px;
-    color: var(--white);
-    width: max-content;
+.flex-heart {
+    display: flex;
 }
 
 #lang-select {
     text-decoration: none;
-    color: var(--white);
-    background-color: var(--black);
     min-width: 60px;
     border-color: transparent;
+    background-color: var(--black);
+    color: var(--white);
 }
 
-div.flex-heart {
-    display: flex;
-    align-items: center;
+div.absolute h3 {
+    color: var(--black);
 }
 
-/* .relative {
+.relative {
     position: relative;
 }
 
@@ -555,16 +555,23 @@ div.flex-heart {
     border-radius: 5px;
     padding: 50px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    top: 50%;
-    left: 50%;
     position: absolute;
+    bottom: 50%;
+    right: 20%;
     transform: translate(-50%, -50%);
     z-index: 10000;
 }
 
 div.lang:hover .absolute,
-div.lang:hover #overlay::selection {
+div.lang:hover #overlay {
     display: block;
+}
+
+#close-lang {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 30px;
 }
 
 #overlay {
@@ -589,4 +596,8 @@ div.absolute h3 {
 .link-lang {
     color: var(--link);
     cursor: pointer;
-} */
+}
+
+.link-lang:hover {
+    text-decoration: underline;
+}
