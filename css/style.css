@@ -63,14 +63,14 @@ h5 {
 
 .max-container {
     max-width: 1200px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 100px;
 
 }
 
 .min-container {
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
     margin-bottom: 100px;
 
 }
@@ -86,6 +86,12 @@ li {
 a {
     text-decoration: none;
 }
+
+.relative {
+    position: relative;
+}
+
+
 
 /* bottoni */
 .btn {
@@ -111,14 +117,6 @@ header a.btn-small {
 .btn-small:hover {
     background-color: var(--grey);
     color: var(--botton);
-}
-
-header li:hover {
-    background-color: var(--grey);
-}
-
-header li:active {
-    scale: 0.9;
 }
 
 .btn-width {
@@ -155,6 +153,54 @@ header li:active {
     border: none;
 }
 
+header li:hover {
+    background-color: var(--grey);
+}
+
+li:active {
+    scale: 0.9;
+}
+
+/* Dropdown menu */
+ul.menu-hidden-left,
+div.menu-hidden-left {
+    display: none;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: max-content;
+    height: max-content;
+    background-color: var(--grey);
+    border-radius: 0 20px 0 20px;
+}
+
+ul.menu-hidden-right {
+    display: none;
+    position: absolute;
+    bottom: -115px;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    background-color: var(--grey);
+    border-radius: 20px 0 20px 0;
+}
+
+.relative:hover ul.menu-hidden-right,
+.relative:hover ul.menu-hidden-left,
+.relative:hover div.menu-hidden-left {
+    display: block;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+li.list-hidden-right a:hover {
+    scale: 0.9;
+    background-color: var(--sfondo);
+}
+
+li.list-hidden-left a:hover {
+    scale: 0.9;
+    background-color: var(--sfondo);
+}
 
 /* header */
 header nav {
@@ -378,13 +424,22 @@ div.square-small img {
     transform: translate(-50%, -50%);
 }
 
+div.square-small svg {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* colorazione quadrati */
 .square-small-1 {
     background-color: var(--square1);
-    background-image: url(../img/designit.svg);
+    /* background-image: url(../img/designit.svg); */
     background-repeat: no-repeat;
     background-size: 50%;
     background-position: center;
+    border: 20px solid var(--border-square1);
 }
 
 .square-small-2 {
