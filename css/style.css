@@ -35,6 +35,10 @@
         /* rimuovere */
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: var(--white);
@@ -150,7 +154,7 @@ header a.btn-small {
     border: none;
 }
 
-header li:hover {
+header li.relative:hover {
     background-color: var(--grey);
 }
 
@@ -192,11 +196,13 @@ ul.menu-hidden-right {
 li.list-hidden-right a:hover {
     scale: 0.9;
     background-color: var(--sfondo);
+    border-radius: 20px 0 20px 0;
 }
 
 li.list-hidden-left a:hover {
     scale: 0.9;
     background-color: var(--sfondo);
+    border-radius: 0 20px 0 20px;
 }
 
 /* header */
