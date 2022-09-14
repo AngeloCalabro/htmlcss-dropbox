@@ -421,22 +421,26 @@ div.square-small img {
     transform: translate(-50%, -50%);
 }
 
-div.square-small svg {
+/* div.square-small svg {
     width: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+} */
+
+/* colorazione quadrati ed immagine*/
+div.square-small img {
+    filter: invert(1);
 }
 
-/* colorazione quadrati */
 .square-small-1 {
     background-color: var(--square1);
-    /* background-image: url(../img/designit.svg); */
+    border: 15px solid var(--border-square1);
+    /* background-image: url(../img/designit.svg);
     background-repeat: no-repeat;
     background-size: 50%;
-    background-position: center;
-    border: 20px solid var(--border-square1);
+    background-position: center; */
 }
 
 .square-small-2 {
