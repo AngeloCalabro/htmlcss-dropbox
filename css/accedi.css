@@ -92,6 +92,7 @@ a {
     text-align: center;
     border-radius: 10px;
     padding: 10px 20px;
+    font-size: var(--font-xs);
     font-weight: bold;
     transition: 0.2s;
 }
@@ -100,20 +101,18 @@ a {
     background-color: var(--white);
     color: var(--botton);
     border: 1px solid var(--botton);
-    font-size: var(--font-xxs);
 }
 
 .btn-blue {
     background-color: var(--botton);
     color: var(--white);
-    font-size: var(--font-xs);
-
+    border: 1px solid var(--botton);
 }
 
 .btn:hover {
     background-color: var(--grey);
     color: var(--botton);
-    scale: 0.99;
+    scale: 0.9;
 }
 
 .btn-link-white {
